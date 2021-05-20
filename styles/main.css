@@ -118,6 +118,17 @@ main
   margin-top: 20px;
 }
 
+main .container-slider
+{
+  max-width: var(--dom--max-width);
+  min-width: var(--dom--min-width);
+
+  margin: 0 auto;
+
+  overflow: hidden;
+  height: 650px;
+}
+
 main .container-products .h2>h2
 {
   text-transform: uppercase;
@@ -281,6 +292,116 @@ footer .container-footer .copyright
   font-size: 12px;
   font-weight: bold;
 }
+
+
+
+/* ------------ MEDIA QUERIES ----------- */
+
+@media screen AND (max-width: 540px) {
+
+  body
+  {
+    background-size: cover;
+  }
+
+  main {
+    width: 100%;
+    background-color: var(--color--theme--secondary);
+    margin-top: 0px;
+  }
+
+  header .container-header .logo a > img {
+    width: 150px;
+    margin-left: 0px;
+  }
+   
+  header .container-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  main .container-slider {
+    max-width: var(--dom--max-width);
+    min-width: var(--dom--min-width);
+    margin: 0 auto;
+    overflow: hidden;
+    height: 350px;
+  }
+
+  main .container-products .card
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main .container-products .card > .product {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+  }
+
+  main .container-products .card .product > img {
+    width: 100%;
+  }
+
+  main .container-products .h2 > h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: white;
+    margin: 10px 20px;
+    padding: 10px;
+    font-size: 25px;
+  }
+
+  main .container-products .card .product > .product-detail > p {
+    color: var(--color--dark-grey);
+    width: 425px;
+  }
+
+  main .container-products .card .product > .product-detail > h2 {
+    font-size: 23px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  main .container-products .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  footer > .container-footer {
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+
+  footer .container-footer .social-network {
+    margin-left: 0px;
+  }
+
+  footer .container-footer .info {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+  }
+
+  footer .container-footer .social-network > a > i {
+    background-color: var(--color--theme--main);
+    color: white;
+    padding: 7px;
+    border-radius: 50%;
+  }
+};
 
 
 /* .example-collection {

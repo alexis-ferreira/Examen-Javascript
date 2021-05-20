@@ -45,26 +45,22 @@
     </header>
 
     <main>
-      <div class="slider">
-        <div class="slider__item-list">
-          <img class="slider__item" src="./images/banner-slider/1.jpg" alt="Intérieur d'une voiture de sport.">
-        </div>
-        <div class="slider__item slider__item-list">
-          <img src="./images/banner-slider/2.jpg" alt="Photo d'un moteur de voiture.">
-        </div>
-        <div class="slider__item-list">
-          <img class="slider__item" src="./images/banner-slider/3.jpg" alt="Photo d'une voiture sportive coupée cabriolet.">
-        </div>
-        <div class="slider-button">
-          <button class="slider__button--previous">
+      <div class="container-slider">
+        <div class="slider">
+          <div class="slider__bullet-container">
+          </div>
+          <button class="slider__button slider__button--previous">
             <i class="fas fa-chevron-left"></i>
           </button>
-          <button class=".slider__button--next">
+          <div class="slider__item-list">
+            <img src="./images/banner-slider/1.jpg" alt="Intérieur voiture." class="slider__item slider__item--active">
+            <img src="./images/banner-slider/2.jpg" alt="Moteur voiture." class="slider__item">
+            <img src="./images/banner-slider/3.jpg" alt="Cabriolet noir." class="slider__item">
+          </div>
+          <button class="slider__button slider__button--next">
             <i class="fas fa-chevron-right"></i>
           </button>
-        </div>
-        <div class="slider__bullet-container">
-          <div class="slider__bullet"></div>
+          </div>
         </div>
       </div>
 
